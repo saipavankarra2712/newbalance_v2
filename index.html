@@ -3,133 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyWebsite</title>
+    <title>New Balance Cricket - Official Franchise Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="logo">NB | CRICKET</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <ul class="nav-links">
+            <li><a href="#home" class="anchor-link">Home</a></li>
+            <li><a href="#collections" class="anchor-link">Categories</a></li>
+            <li><a href="#product" class="anchor-link">Shop</a></li>
+            <li><a href="#about" class="anchor-link">About</a></li>
+            <li><a href="#contact" class="anchor-link">Contact</a></li>
+        </ul>
+    </nav>
 
-<nav class="navbar">
-    <div class="logo">MyWebsite</div>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-xmark"></i>
-    </label>
-    <ul class="nav-links">
-        <li><a href="#home" class="anchor-link">Home</a></li>
-        <li><a href="#about" class="anchor-link">About us</a></li>
-        <li><a href="#product" class="anchor-link">Products</a></li>
-        <li><a href="#contact" class="anchor-link">Contact</a></li>
-    </ul>
-</nav>
-
-<div class="hero" id="home">
-    <h1>Welcome to New Balance Website</h1>
-    <p>Explore our latest collection of quality products at affordable prices.</p>
-    <button><a href="#product" class="anchor-link">Explore Products</a></button>
-</div>
-
-<section class="about" id="about">
-    <div class="about-container">
-        <div class="about-image">
-            <img src="New Balance Creative Studio Brainstorm.png" alt="About Us">
-        </div>
-        <div class="about-content">
-            <h4>About Us</h4>
-            <h1>We Build Ideas into Reality With Team</h1>
-            <p>Welcome to MyWebsite! We offer authentic products including cricket bats, shoes, and hoodies at original prices. Our goal is to provide a simple and enjoyable shopping experience with great value and complete customer satisfaction.</p>
-            <a href="#contact" class="about-btn">Learn More</a>
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h1>NEW BALANCE<br>CRICKET FRANCHISE</h1>
+            <p>Engineered for Champions. Pro Bats, Protective Gear & Match Kits.</p>
+            <div class="hero-buttons">
+                <a href="#product" class="shop-btn">Shop Equipment</a>
+                <a href="#collections" class="explore-btn">Explore Categories</a>
+            </div>
         </div>
     </div>
-</section>
 
-<h1 class="product-head" id="product">Our Products</h1>
-<div class="product-container">
-    <div class="product-card">
-        <img src="NB Cricket Bat.webp" alt="Cricket Bat">
-        <h3>Cricket Bat</h3>
-        <p>Designed for cricket lovers who value superior performance, balance, and style.</p>
-        <h4>₹50,000.00</h4>
-        <button>Buy Now</button>
-    </div>
-    <div class="product-card">
-        <img src="NB Shoe.webp" alt="Sports Shoes">
-        <h3>Sports Shoes</h3>
-        <p>Comfortable and stylish shoes crafted for training and everyday use.</p>
-        <h4>₹6,000.00</h4>
-        <button>Buy Now</button>
-    </div>
-    <div class="product-card">
-        <img src="NB Hoodie.webp" alt="Hoodie">
-        <h3>Sport Hoodie</h3>
-        <p>Comfortable everyday wear with a sporty look and premium feel.</p>
-        <h4>₹2,000.00</h4>
-        <button>Buy Now</button>
-    </div>
-</div>
-
-<div>
-    <h1 class="contact">Contact Us</h1>
-    <section class="contact-sec" id="contact">
-        <p class="contact-text">We would love to hear from you!</p>
-        <form>
-            <div class="form-group">
-                <label for="username">Customer Name:</label>
-                <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+    <section class="collections" id="collections">
+        <h2>Featured Categories</h2>
+        <div class="collection-container">
+            <div class="collection-card">
+                <img src="nb-bat-tc.png" alt="New Balance Cricket Bats">
+                <h3>BATS</h3>
             </div>
-            <div class="form-group">
-                <label for="address">Customer Address:</label>
-                <textarea id="address" name="address" placeholder="Enter Your Address" rows="3" cols="25" required></textarea>
+            <div class="collection-card">
+                <img src="cat-ball.jpg" alt="New Balance Match Balls">
+                <h3>BALLS</h3>
             </div>
-            <div class="form-group">
-                <label for="company">Company Name:</label>
-                <input type="text" id="company" name="company" placeholder="Enter Your Company Name" required>
+            <div class="collection-card">
+                <img src="nb-pads.jpg" alt="New Balance Batting Pads">
+                <h3>PADS</h3>
             </div>
-            <button type="submit">Submit</button>
-        </form>
+            <div class="collection-card">
+                <img src="nb-gloves.jpg" alt="New Balance Batting Gloves">
+                <h3>GLOVES</h3>
+            </div>
+            <div class="collection-card">
+                <img src="nb-kitbag.jpg" alt="New Balance Kit Bags & Accessories">
+                <h3>KIT & ACCESSORIES</h3>
+            </div>
+        </div>
     </section>
-</div>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-box">
-            <h2>MyWebsite</h2>
-            <p>Welcome to my Website. We provide quality products to our customers with affordable prices.</p>
+    <section class="products" id="product">
+        <h2>New Balance Pro Gear</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="nb-bat-tc.png" alt="NB TC 1260 Cricket Bat">
+                <h3>NB TC 1260 Pro Bat</h3>
+                <p class="product-desc">
+                    Grade 1+ English willow with massive 40mm power edges.<br>
+                    Mid-blade balance tuned for explosive strokeplay.
+                </p>
+                <p class="product-price">₹18,499.00</p>
+                <a href="product1.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <img src="nb-gloves.jpg" alt="NB DC 1200 Batting Gloves">
+                <h3>NB DC 1200 Batting Gloves</h3>
+                <p class="product-desc">
+                    Premium sheepskin palm with multi-split finger styling.<br>
+                    High-density fiber shield inserts for maximum impact safety.
+                </p>
+                <p class="product-price">₹3,199.00</p>
+                <a href="product2.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <img src="nb-pads.jpg" alt="NB DC 1200 Batting Pads">
+                <h3>NB DC 1200 Batting Pads</h3>
+                <p class="product-desc">
+                    Lightweight cane construction with ergonomic knee roll.<br>
+                    Gel-infused foam side wing for superior pace protection.
+                </p>
+                <p class="product-price">₹4,899.00</p>
+                <a href="product3.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <img src="nb-spikes.jpg" alt="NB CK4040 Cricket Spikes">
+                <h3>NB CK4040 Bowling Spikes</h3>
+                <p class="product-desc">
+                    Breathable synthetic upper with 11-spike TPU plate.<br>
+                    FuelCell midsole cushioning for intense bowling spells.
+                </p>
+                <p class="product-price">₹7,999.00</p>
+                <a href="product4.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <img src="nb-kitbag.jpg" alt="NB Pro Wheelie Kit Bag">
+                <h3>NB Pro Wheelie Kit Bag</h3>
+                <p class="product-desc">
+                    Heavy-duty 1680D nylon with dual padded bat sleeves.<br>
+                    Rugged tractor wheels designed for match and tour travel.
+                </p>
+                <p class="product-price">₹5,499.00</p>
+                <a href="product5.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <img src="cat-ball.jpg" alt="NB Test Match Leather Ball">
+                <h3>NB 4-Piece Leather Ball</h3>
+                <p class="product-desc">
+                    Alum tanned premium seam leather with cork core center.<br>
+                    Pronounced hand-stitched seam for durable 80+ overs swing.
+                </p>
+                <p class="product-price">₹1,499.00</p>
+                <a href="product6.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <img src="NB Cricket Bat.webp" alt="NB Heritage English Willow Bat">
+                <h3>NB Heritage Pro Bat</h3>
+                <p class="product-desc">
+                    Hand-crafted unbleached English willow profile.<br>
+                    Featherlight pickup engineered for swift counter-attacks.
+                </p>
+                <p class="product-price">₹12,999.00</p>
+                <a href="product7.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="product-card">
+                <img src="NB Hoodie.webp" alt="NB Cricket Training Hoodie">
+                <h3>NB Team Training Hoodie</h3>
+                <p class="product-desc">
+                    Thermal fleece fabric featuring moisture-wicking NB DRY.<br>
+                    Athletic comfort cut built for early morning warmups.
+                </p>
+                <p class="product-price">₹2,499.00</p>
+                <a href="product8.html" class="view-details">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom-section" id="about">
+        <div class="why-choose">
+            <h2>Why Choose Our Franchise</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>100% Genuine NB</p>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <p>Free Express Shipping</p>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-headset"></i>
+                    <p>24/7 Match Support</p>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <img src="reviewer.jpg" alt="Reviewer photo">
+                <div class="customer-details">
+                    <h3>Vikram Rathore</h3>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <p class="review">
+                    "As an active club cricketer, getting genuine New Balance gear was always a priority. The TC 1260 bat has exceptional ping, and the DC batting gloves provide unbeatable shock protection against fast bowling. Outstanding franchise service!"
+                </p>
+            </div>
         </div>
 
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#product">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="newsletter" id="contact">
+            <h2>Franchise Club</h2>
+            <div class="newsletter-box">
+                <h4>Get 15% Off your<br> first New Balance kit!</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Email: pavankarra2712@gmail.com</p>
-            <p>Phone: +91 8522965119</p>
-            <p>Location: Madhapur, Hyderabad, Telangana, India</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <a href="#home">Home</a>
+                <a href="#collections">Categories</a>
+                <a href="#product">Shop</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Warranty Policy</a>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>New Balance Cricket Franchise Store</p>
+                <p>Address: Madhapur Main Road, Hyderabad, India</p>
+                <p>Phone: +91 8522965119</p>
+                <p>Email: pavankarra2712@gmail.com</p>
+            </div>
+            <div class="footer-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
         </div>
-
-        <div class="footer-media">
-            <h3>Follow Us</h3>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-    </div>
-
-    <div class="copyright">
-        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
-    </div>
-</footer>
-
+    </footer>
 </body>
 </html>
