@@ -141,7 +141,6 @@ body {
     border: 1px solid #334155;
     border-radius: 10px;
     text-align: center;
-    overflow: hidden;
     transition: transform 0.3s ease;
 }
 
@@ -152,6 +151,7 @@ body {
     background-color: #0b1120;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
     display: block;
 }
 
@@ -192,7 +192,6 @@ body {
     border-radius: 10px;
     text-align: center;
     padding-bottom: 16px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -206,6 +205,7 @@ body {
     background-color: #0b1120;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
     display: block;
 }
 
@@ -572,6 +572,28 @@ footer p {
     color: white;
 }
 
+@media (max-width: 768px) {
+    .product-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .product-card {
+        flex: 1 1 260px;
+        max-width: 320px;
+    }
+
+    .collection-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .collection-card {
+        flex: 1 1 180px;
+        max-width: 220px;
+    }
+}
+
 @media (max-width: 546px) {
     body {
         overflow-x: hidden;
@@ -648,34 +670,92 @@ footer p {
     .collection-container {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .collection-card {
+        flex: none;
         width: 100%;
         max-width: 350px;
+        height: auto;
+        padding-bottom: 14px;
+        box-sizing: border-box;
     }
 
     .collection-card img {
-        height: 180px;
+        width: 100%;
+        height: 160px;
+        object-fit: contain;
+    }
+
+    .collection-card h3 {
+        display: block;
+        margin: 12px;
+        font-size: 16px;
+        color: white;
     }
 
     .products {
-        padding: 20px;
+        padding: 25px 20px;
     }
 
     .product-container {
         flex-direction: column;
         align-items: center;
+        gap: 25px;
     }
 
     .product-card {
+        flex: none;
         width: 100%;
         max-width: 350px;
+        height: auto;
+        padding-bottom: 20px;
         box-sizing: border-box;
     }
 
     .product-card img {
-        height: 200px;
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+    }
+
+    .product-card h3 {
+        display: block;
+        font-size: 17px;
+        margin: 12px 10px 4px;
+        color: white;
+    }
+
+    .product-desc {
+        display: block;
+        color: #94a3b8;
+        font-size: 13px;
+        line-height: 1.45;
+        min-height: auto;
+        margin: 6px 12px 8px;
+    }
+
+    .product-price {
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+        color: #f87171;
+        margin: 8px 10px 10px;
+    }
+
+    .view-details {
+        display: block;
+        width: 85%;
+        margin: 10px auto 0;
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: #dc2626;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 7px;
     }
 
     .shoe-detail-page {
@@ -711,8 +791,10 @@ footer p {
     }
 
     .back-shopping {
+        display: block;
         width: 100%;
         text-align: center;
+        box-sizing: border-box;
     }
 
     .bottom-section {
