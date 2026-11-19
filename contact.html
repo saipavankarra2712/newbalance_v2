@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MovieLand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- CONSISTENT HEADER / NAVBAR -->
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><b>MovieLand!</b></a>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#movies">Movies</a></li>
+            <li><a href="index.html#genres">Genres</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="goback">
+    <a href="index.html">
+        <i class="fa-solid fa-arrow-left"></i> Back to Home
+    </a>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="contact" style="padding-top: 40px;">
+
+    <h2 class="heading">Get In <span>Touch</span></h2>
+
+    <p class="section-description">
+        Have questions about tickets, showtimes, or movie catalog listings? Reach out to MovieLand support.
+    </p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>MovieLand Support</h3>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                pavankarra2712@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 8522965119
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Madhapur Main Road, Hyderabad, India
+            </p>
+
+            <div style="margin-top: 30px; line-height: 1.8; color: #666; font-size: 14px;">
+                <h4 style="color: #222; margin-bottom: 8px;">Operating Hours</h4>
+                <p style="margin: 4px 0;">Monday - Sunday: 9:00 AM - 11:30 PM IST</p>
+                <p style="margin: 4px 0;">Customer Helpline: 24/7 Cinephile Support</p>
+            </div>
+
+        </div>
+
+        <form class="contact-form" onsubmit="return handleContact(event)">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <input type="text" placeholder="Subject">
+
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- CONSISTENT FOOTER SECTION -->
+<footer id="contact" class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h2>MovieLand!</h2>
+            <p>
+                Bringing thrilling stories, cinematic artistry, and unforgettable 
+                adventures straight to movie enthusiasts worldwide.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#movies">Movies</a>
+            <a href="index.html#genres">Genres</a>
+            <a href="index.html#about">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Madhapur Main Road, Hyderabad, India</p>
+            <p><i class="fa-solid fa-phone"></i> +91 8522965119</p>
+            <p><i class="fa-solid fa-envelope"></i> pavankarra2712@gmail.com</p>
+
+            <div class="social-icons" style="margin-top: 15px;">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 MovieLand. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script>
+    function handleContact(e) {
+        e.preventDefault();
+        alert("Thank you! Your message has been sent to MovieLand support.");
+        e.target.reset();
+        return false;
+    }
+</script>
+
+</body>
+</html>

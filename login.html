@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - MovieLand</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        .login-page {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(10, 11, 16, 0.8), rgba(10, 11, 16, 0.88)), url('images/auth_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .login-box {
+            width: 420px;
+            max-width: 100%;
+            background: #ffffff;
+            padding: 42px 36px;
+            border-radius: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            border: 1px solid #f0e0e5;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .login-box .logo {
+            display: inline-block;
+            color: var(--primary-color, #e50914);
+            font-size: 32px;
+            font-weight: 800;
+            text-decoration: none;
+            margin-bottom: 12px;
+        }
+
+        .login-box h2 {
+            color: #222222;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .login-box p {
+            color: #777777;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .login-input {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+
+        .login-input label {
+            display: block;
+            color: #444444;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .login-box input[type="email"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .login-box input:focus {
+            border-color: var(--primary-color, #e50914);
+            box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.12);
+        }
+
+        .remember {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0 20px;
+            font-size: 12px;
+            gap: 10px;
+        }
+
+        .remember label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #555555;
+            cursor: pointer;
+        }
+
+        .remember input {
+            accent-color: var(--primary-color, #e50914);
+        }
+
+        .remember a {
+            color: var(--primary-color, #e50914);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .remember a:hover {
+            text-decoration: underline;
+        }
+
+        .login-box button {
+            width: 100%;
+            margin: 10px 0 16px;
+            padding: 13px;
+            border: none;
+            border-radius: 10px;
+            background: var(--primary-color, #e50914);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(229, 9, 20, 0.3);
+            transition: 0.3s;
+        }
+
+        .login-box button:hover {
+            background: var(--primary-hover, #b80710);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(229, 9, 20, 0.45);
+        }
+
+        .login-box .signup {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .signup a {
+            color: var(--primary-color, #e50914);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+
+        .login-box .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            color: var(--primary-color, #e50914);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            transform: translateX(-3px);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .login-box {
+                padding: 28px 20px;
+            }
+
+            .remember {
+                font-size: 11px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="login-page">
+
+    <div class="login-box">
+
+        <a href="index.html" class="logo">
+             MovieLand!
+        </a>
+
+        <h2>Welcome Back!</h2>
+
+        <p>Login to your MovieLand account</p>
+
+        <form action="#" method="post" onsubmit="return loginUser()">
+
+            <div class="login-input">
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+            <div class="login-input">
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+            </div>
+
+            <div class="remember">
+
+                <label>
+                    <input type="checkbox" name="remember">
+                    Remember Me
+                </label>
+
+                <a href="#" onclick="forgotPassword(event)">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+            <button type="submit" class="login-submit">
+                Login
+            </button>
+
+        </form>
+
+        <p class="signup">
+            Don't have an account?
+            <a href="registration.html">Sign Up</a>
+        </p>
+
+        <a href="index.html" class="back-home">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+    </div>
+
+    <script>
+        function loginUser() {
+            alert("Login form submitted successfully! Welcome to MovieLand.");
+            window.location.href = "index.html";
+            return false;
+        }
+
+        function forgotPassword(event) {
+            event.preventDefault();
+            alert("Please contact MovieLand support (pavankarra2712@gmail.com) to reset your password.");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker: Folie à Deux - MovieLand Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- CONSISTENT HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><b>MovieLand!</b></a>
+
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#movies">Movies</a></li>
+                <li><a href="index.html#genres">Genres</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- GO BACK BUTTON -->
+    <div class="goback">
+        <a href="index.html#movies">
+            <i class="fa-solid fa-arrow-left"></i> Back to Movies
+        </a>
+    </div>
+
+
+    <!-- MOVIE DETAILS CONTAINER -->
+    <section class="product-container movie-detail-container">
+
+        <div class="product-image">
+            <img id="toy-image" src="images/movie_joker.jpg" alt="Joker: Folie à Deux Poster">
+        </div>
+
+        <div class="product-details">
+
+            <div class="brand">
+                <i class="fa-regular fa-heart" onclick="toggleFavorite(this)" title="Add to Watchlist"></i>
+                <i class="fa-regular fa-comment" onclick="showReviews()" title="Reviews"></i>
+                <i class="fa-solid fa-share-nodes" onclick="shareMovie()" title="Share"></i>
+            </div>
+
+            <h1 id="toy-name">Joker: Folie à Deux</h1>
+
+            <p class="subtitle" id="toy-subtitle">
+                Thriller | Crime | Musical Drama • 2h 18m • 2024 • 4K UHD
+            </p>
+
+            <div class="rating">
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span>
+
+                <p>4.5/5 (IMDb 7.2/10)</p>
+            </div>
+
+            <div class="price">
+                <h2 id="toy-price">₹249</h2>
+                <del id="old-price">₹399</del>
+                <span class="discount" id="discount">38% OFF - Psychological Masterpiece</span>
+            </div>
+
+            <p class="description" id="toy-description">
+                Arthur Fleck is institutionalized at Arkham awaiting trial for his crimes as Joker. While struggling with his dual identity, Arthur not only stumbles upon true love, but also finds the music that has always been inside him.
+            </p>
+
+            <div class="movie-meta-grid">
+                <div><span>Director:</span> <strong>Todd Phillips</strong></div>
+                <div><span>Starring:</span> <strong>Joaquin Phoenix, Lady Gaga, Brendan Gleeson</strong></div>
+                <div><span>Audio & Sound:</span> <strong>Dolby Digital Plus • English</strong></div>
+                <div><span>Age Certification:</span> <strong>A (Psychological Themes)</strong></div>
+            </div>
+
+            <div class="quantity">
+                <label for="tickets">Tickets / Passes:</label>
+                <input type="number" id="tickets" value="1" min="1" max="10">
+            </div>
+
+            <div class="buttons">
+
+                <button class="cart-btn" onclick="addToWatchlist()">
+                    <i class="fa-regular fa-bookmark"></i> Add to Watchlist
+                </button>
+
+                <button class="buy-btn" onclick="bookTickets()">
+                    <i class="fa-solid fa-ticket"></i> Book Tickets Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONSISTENT FOOTER SECTION -->
+    <footer id="contact" class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-box">
+                <h2>MovieLand!</h2>
+                <p>
+                    Bringing thrilling stories, cinematic artistry, and unforgettable 
+                    adventures straight to movie enthusiasts worldwide.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#movies">Movies</a>
+                <a href="index.html#genres">Genres</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#contact">Contact Us</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Madhapur Main Road, Hyderabad, India</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8522965119</p>
+                <p><i class="fa-solid fa-envelope"></i> pavankarra2712@gmail.com</p>
+
+                <div class="social-icons" style="margin-top: 15px;">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 MovieLand. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        function addToWatchlist() {
+            alert("'Joker: Folie à Deux' has been added to your MovieLand Watchlist!");
+        }
+
+        function bookTickets() {
+            const count = document.getElementById('tickets').value;
+            alert("Success! You booked " + count + " ticket(s) for 'Joker: Folie à Deux' at ₹249 each. Enjoy your movie at MovieLand!");
+        }
+
+        function toggleFavorite(icon) {
+            icon.classList.toggle('fa-solid');
+            icon.classList.toggle('fa-regular');
+            alert(icon.classList.contains('fa-solid') ? "Added to favorites!" : "Removed from favorites.");
+        }
+
+        function showReviews() {
+            alert("MovieLand Reviews for 'Joker: Folie à Deux':\n\n5/5 - 'An absolute visual masterpiece!'\n5/5 - 'Mind-blowing 3D effects and thrilling soundtrack!'");
+        }
+
+        function shareMovie() {
+            alert("Share link copied to clipboard: " + window.location.href);
+        }
+    </script>
+
+</body>
+</html>

@@ -3,227 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Balance Cricket - Official Franchise Store</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>MovieLand - The Ultimate Cinema & 3D Movie Catalog</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">NB | CRICKET</div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark"></i>
-        </label>
-        <ul class="nav-links">
-            <li><a href="#home" class="anchor-link">Home</a></li>
-            <li><a href="#collections" class="anchor-link">Categories</a></li>
-            <li><a href="#product" class="anchor-link">Shop</a></li>
-            <li><a href="#about" class="anchor-link">About</a></li>
-            <li><a href="#contact" class="anchor-link">Contact</a></li>
-        </ul>
-    </nav>
 
-    <div class="hero" id="home">
-        <div class="hero-content">
-            <h1>NEW BALANCE<br>CRICKET FRANCHISE</h1>
-            <p>Engineered for Champions. Pro Bats, Protective Gear & Match Kits.</p>
-            <div class="hero-buttons">
-                <a href="#product" class="shop-btn">Shop Equipment</a>
-                <a href="#collections" class="explore-btn">Explore Categories</a>
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+    <a href="#home" class="logo"><b>MovieLand!</b></a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#genres">Genres</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Welcome to <span>MovieLand!</span></h1>
+
+        <h2>Where Every Story Pops Into 3D</h2>
+
+        <p>
+            Discover an exhilarating universe of blockbuster cinema, thrilling mysteries, 
+            epic adventures, and timeless romance. Experience legendary characters 
+            that leap off the screen with our interactive 3D catalog.
+        </p>
+
+        <a href="#movies" class="btn">Explore Movies</a>
+    </div>
+</section>
+
+
+<!-- MOVIES CATALOG SECTION (WITH 3D POP-OUT EFFECT) -->
+<section class="toys movies" id="movies">
+
+    <h2 class="heading">Our <span>Movies</span></h2>
+
+    <p class="section-description">
+        Explore our curated collection of trending blockbusters and cinematic spectacles in 3D.
+    </p>
+
+    <div class="toy-container movie-container">
+
+        <!-- MOVIE 1: SPIDER-MAN -->
+        <div class="toy-card movie-card">
+            <div class="card-image-box">
+                <img class="card-bg" src="images/poster_spiderman.jpg" alt="Spider-Man Background">
+                <img class="card-character-pop" src="images/spiderman_char.png" alt="Spider-Man 3D Character">
+                <span class="genre-badge">Action / Sci-Fi</span>
             </div>
+            <h3 class="pop-title-3d">Spider-Man: Across the Spider-Verse</h3>
+            <p>Miles Morales catapults across the Multiverse encountering a team of Spider-Heroes.</p>
+            <h4>₹299 <span>/ IMAX 3D</span></h4>
+            <a href="spiderman.html" class="btn">View details</a>
+        </div>
+
+        <!-- MOVIE 2: BATMAN -->
+        <div class="toy-card movie-card">
+            <div class="card-image-box">
+                <img class="card-bg" src="images/poster_batman.jpg" alt="The Dark Knight Background">
+                <img class="card-character-pop" src="images/batman_char.png" alt="Batman 3D Character">
+                <span class="genre-badge">Action / Thriller</span>
+            </div>
+            <h3 class="pop-title-3d">The Dark Knight</h3>
+            <p>Batman faces his greatest psychological test as the Joker unleashes total chaos in Gotham.</p>
+            <h4>₹249 <span>/ 4K UHD</span></h4>
+            <a href="batman.html" class="btn">View details</a>
+        </div>
+
+        <!-- MOVIE 3: AVENGERS ENDGAME -->
+        <div class="toy-card movie-card">
+            <div class="card-image-box">
+                <img class="card-bg" src="images/poster_ironman.jpg" alt="Avengers Endgame Background">
+                <img class="card-character-pop" src="images/ironman_char.png" alt="Iron Man 3D Character">
+                <span class="genre-badge">Action / Sci-Fi</span>
+            </div>
+            <h3 class="pop-title-3d">Avengers: Endgame</h3>
+            <p>The universe's remaining heroes assemble for an epic final stand to reverse Thanos' snap.</p>
+            <h4>₹349 <span>/ IMAX 3D</span></h4>
+            <a href="avengers.html" class="btn">View details</a>
+        </div>
+
+        <!-- MOVIE 4: AVATAR -->
+        <div class="toy-card movie-card">
+            <div class="card-image-box">
+                <img class="card-bg" src="images/poster_avatar.jpg" alt="Avatar Background">
+                <img class="card-character-pop" src="images/avatar_char.png" alt="Avatar 3D Character">
+                <span class="genre-badge">Sci-Fi / Adventure</span>
+            </div>
+            <h3 class="pop-title-3d">Avatar: The Way of Water</h3>
+            <p>Jake Sully and Neytiri fight to protect Pandora's breathtaking oceans from human threat.</p>
+            <h4>₹299 <span>/ 3D Premiere</span></h4>
+            <a href="avatar.html" class="btn">View details</a>
+        </div>
+
+        <!-- MOVIE 5: DEADPOOL -->
+        <div class="toy-card movie-card">
+            <div class="card-image-box">
+                <img class="card-bg" src="images/poster_deadpool.jpg" alt="Deadpool Background">
+                <img class="card-character-pop" src="images/deadpool_char.png" alt="Deadpool 3D Character">
+                <span class="genre-badge">Comedy / Action</span>
+            </div>
+            <h3 class="pop-title-3d">Deadpool & Wolverine</h3>
+            <p>A witty Wade Wilson pairs up with a reluctant Wolverine to defend the timeline.</p>
+            <h4>₹299 <span>/ Dolby Atmos</span></h4>
+            <a href="deadpool.html" class="btn">View details</a>
+        </div>
+
+        <!-- MOVIE 6: JOKER -->
+        <div class="toy-card movie-card">
+            <div class="card-image-box">
+                <img class="card-bg" src="images/poster_joker.jpg" alt="Joker Background">
+                <img class="card-character-pop" src="images/joker_char.png" alt="Joker 3D Character">
+                <span class="genre-badge">Thriller / Drama</span>
+            </div>
+            <h3 class="pop-title-3d">Joker: Folie à Deux</h3>
+            <p>Arthur Fleck navigates psychological isolation in Arkham while finding romance with Lee.</p>
+            <h4>₹249 <span>/ 4K UHD</span></h4>
+            <a href="joker.html" class="btn">View details</a>
+        </div>
+
+        <!-- MOVIE 7: HARRY POTTER -->
+        <div class="toy-card movie-card">
+            <div class="card-image-box">
+                <img class="card-bg" src="images/poster_harrypotter.jpg" alt="Harry Potter Background">
+                <img class="card-character-pop" src="images/harrypotter_char.png" alt="Harry Potter 3D Character">
+                <span class="genre-badge">Adventure / Fantasy</span>
+            </div>
+            <h3 class="pop-title-3d">Harry Potter: Deathly Hallows</h3>
+            <p>Harry, Ron, and Hermione race against time to destroy the Horcruxes and face Voldemort.</p>
+            <h4>₹199 <span>/ Remastered</span></h4>
+            <a href="harrypotter.html" class="btn">View details</a>
+        </div>
+
+        <!-- MOVIE 8: WONDER WOMAN -->
+        <div class="toy-card movie-card">
+            <div class="card-image-box">
+                <img class="card-bg" src="images/poster_wonderwoman.jpg" alt="Wonder Woman Background">
+                <img class="card-character-pop" src="images/wonderwoman_char.png" alt="Wonder Woman 3D Character">
+                <span class="genre-badge">Action / Adventure</span>
+            </div>
+            <h3 class="pop-title-3d">Wonder Woman</h3>
+            <p>Diana leaves the Amazonian island of Themyscira to discover her destiny amidst great conflict.</p>
+            <h4>₹229 <span>/ 4K Experience</span></h4>
+            <a href="wonderwoman.html" class="btn">View details</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- GENRES SECTION (WITH REAL MOVIE TITLE POSTERS & 3D POP EFFECT) -->
+<section class="collections genres" id="genres">
+
+    <h2 class="heading">Movie <span>Genres</span></h2>
+
+    <p class="section-description">
+        Find the perfect cinematic experience for every mood, emotion, and adrenaline rush.
+    </p>
+
+    <div class="collection-container genre-container">
+
+        <div class="collection-card genre-card">
+            <img src="images/genre_action.jpg" alt="Action Movies">
+            <div class="genre-overlay">
+                <i class="fa-solid fa-burst genre-icon"></i>
+                <h3 class="pop-genre-3d">Action</h3>
+                <p class="genre-tag">High Stakes & Explosive Showdowns</p>
+            </div>
+        </div>
+
+        <div class="collection-card genre-card">
+            <img src="images/genre_thriller.jpg" alt="Thriller Movies">
+            <div class="genre-overlay">
+                <i class="fa-solid fa-mask genre-icon"></i>
+                <h3 class="pop-genre-3d">Thriller</h3>
+                <p class="genre-tag">Mind-Bending Suspense & Tension</p>
+            </div>
+        </div>
+
+        <div class="collection-card genre-card">
+            <img src="images/genre_romance.jpg" alt="Love & Romance Movies">
+            <div class="genre-overlay">
+                <i class="fa-solid fa-heart genre-icon"></i>
+                <h3 class="pop-genre-3d">Love & Romance</h3>
+                <p class="genre-tag">Heartfelt Emotion & Timeless Passion</p>
+            </div>
+        </div>
+
+        <div class="collection-card genre-card">
+            <img src="images/genre_adventure.jpg" alt="Adventure Movies">
+            <div class="genre-overlay">
+                <i class="fa-solid fa-compass genre-icon"></i>
+                <h3 class="pop-genre-3d">Adventure</h3>
+                <p class="genre-tag">Epic Quests & Wild Expeditions</p>
+            </div>
+        </div>
+
+        <div class="collection-card genre-card">
+            <img src="images/genre_scifi.jpg" alt="Sci-Fi Movies">
+            <div class="genre-overlay">
+                <i class="fa-solid fa-rocket genre-icon"></i>
+                <h3 class="pop-genre-3d">Sci-Fi</h3>
+                <p class="genre-tag">Futuristic Frontiers & Deep Space</p>
+            </div>
+        </div>
+
+        <div class="collection-card genre-card">
+            <img src="images/genre_animation.jpg" alt="Animation & Comedy Movies">
+            <div class="genre-overlay">
+                <i class="fa-solid fa-face-laugh-squint genre-icon"></i>
+                <h3 class="pop-genre-3d">Animation & Comedy</h3>
+                <p class="genre-tag">Boundless Laughs & Family Joy</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT US SECTION -->
+<section class="about" id="about">
+
+    <h2 class="heading">About <span>Us</span></h2>
+
+    <div class="about-content">
+        <p>
+            Welcome to MovieLand! We bring the magic of world cinema right to your fingertips 
+            with an expansive catalog of global blockbusters, acclaimed gems, and interactive 3D showcases.
+
+            Our mission is to make every movie-watching moment thrilling, unforgettable, and immersive. 
+            We believe every cinephile deserves state-of-the-art visual entertainment, seamless ticket bookings, 
+            and curated collections that inspire your imagination.
+        </p>
+    </div>
+
+    <!-- WHY CHOOSE US -->
+    <div class="why-us">
+
+        <h2>Why Choose Us</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+                <p>IMAX & 4K Ultra HD</p>
+            </div>
+
+            <div class="feature">
+                <span>
+                    <i class="fa-solid fa-film"></i>
+                </span>
+                <p>Instant Online Booking</p>
+            </div>
+
+            <div class="feature">
+                <span>
+                    <i class="fa-solid fa-headset"></i>
+                </span>
+                <p>24/7 Cinephile Support</p>
+            </div>
+
         </div>
     </div>
 
-    <section class="collections" id="collections">
-        <h2>Featured Categories</h2>
-        <div class="collection-container">
-            <div class="collection-card">
-                <img src="nb-bat-tc.png" alt="New Balance Cricket Bats">
-                <h3>BATS</h3>
-            </div>
-            <div class="collection-card">
-                <img src="cat-ball.jpg" alt="New Balance Match Balls">
-                <h3>BALLS</h3>
-            </div>
-            <div class="collection-card">
-                <img src="nb-pads.jpg" alt="New Balance Batting Pads">
-                <h3>PADS</h3>
-            </div>
-            <div class="collection-card">
-                <img src="nb-gloves.jpg" alt="New Balance Batting Gloves">
-                <h3>GLOVES</h3>
-            </div>
-            <div class="collection-card">
-                <img src="nb-kitbag.jpg" alt="New Balance Kit Bags & Accessories">
-                <h3>KIT & ACCESSORIES</h3>
-            </div>
-        </div>
-    </section>
+</section>
 
-    <section class="products" id="product">
-        <h2>New Balance Pro Gear</h2>
-        <div class="product-container">
-            <div class="product-card">
-                <img src="nb-bat-tc.png" alt="NB TC 1260 Cricket Bat">
-                <h3>NB TC 1260 Pro Bat</h3>
-                <p class="product-desc">
-                    Grade 1+ English willow with massive 40mm power edges.<br>
-                    Mid-blade balance tuned for explosive strokeplay.
-                </p>
-                <p class="product-price">₹18,499.00</p>
-                <a href="product1.html" class="view-details">View Details</a>
-            </div>
 
-            <div class="product-card">
-                <img src="nb-gloves.jpg" alt="NB DC 1200 Batting Gloves">
-                <h3>NB DC 1200 Batting Gloves</h3>
-                <p class="product-desc">
-                    Premium sheepskin palm with multi-split finger styling.<br>
-                    High-density fiber shield inserts for maximum impact safety.
-                </p>
-                <p class="product-price">₹3,199.00</p>
-                <a href="product2.html" class="view-details">View Details</a>
-            </div>
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
 
-            <div class="product-card">
-                <img src="nb-pads.jpg" alt="NB DC 1200 Batting Pads">
-                <h3>NB DC 1200 Batting Pads</h3>
-                <p class="product-desc">
-                    Lightweight cane construction with ergonomic knee roll.<br>
-                    Gel-infused foam side wing for superior pace protection.
-                </p>
-                <p class="product-price">₹4,899.00</p>
-                <a href="product3.html" class="view-details">View Details</a>
-            </div>
+    <h2 class="heading">Contact <span>Us</span></h2>
 
-            <div class="product-card">
-                <img src="nb-spikes.jpg" alt="NB CK4040 Cricket Spikes">
-                <h3>NB CK4040 Bowling Spikes</h3>
-                <p class="product-desc">
-                    Breathable synthetic upper with 11-spike TPU plate.<br>
-                    FuelCell midsole cushioning for intense bowling spells.
-                </p>
-                <p class="product-price">₹7,999.00</p>
-                <a href="product4.html" class="view-details">View Details</a>
-            </div>
+    <p class="section-description">
+        Have questions or movie suggestions? We would love to hear from you!
+    </p>
 
-            <div class="product-card">
-                <img src="nb-kitbag.jpg" alt="NB Pro Wheelie Kit Bag">
-                <h3>NB Pro Wheelie Kit Bag</h3>
-                <p class="product-desc">
-                    Heavy-duty 1680D nylon with dual padded bat sleeves.<br>
-                    Rugged tractor wheels designed for match and tour travel.
-                </p>
-                <p class="product-price">₹5,499.00</p>
-                <a href="product5.html" class="view-details">View Details</a>
-            </div>
+    <div class="contact-container">
 
-            <div class="product-card">
-                <img src="cat-ball.jpg" alt="NB Test Match Leather Ball">
-                <h3>NB 4-Piece Leather Ball</h3>
-                <p class="product-desc">
-                    Alum tanned premium seam leather with cork core center.<br>
-                    Pronounced hand-stitched seam for durable 80+ overs swing.
-                </p>
-                <p class="product-price">₹1,499.00</p>
-                <a href="product6.html" class="view-details">View Details</a>
-            </div>
+        <div class="contact-info">
 
-            <div class="product-card">
-                <img src="NB Cricket Bat.webp" alt="NB Heritage English Willow Bat">
-                <h3>NB Heritage Pro Bat</h3>
-                <p class="product-desc">
-                    Hand-crafted unbleached English willow profile.<br>
-                    Featherlight pickup engineered for swift counter-attacks.
-                </p>
-                <p class="product-price">₹12,999.00</p>
-                <a href="product7.html" class="view-details">View Details</a>
-            </div>
+            <h3>Get In Touch</h3>
 
-            <div class="product-card">
-                <img src="NB Hoodie.webp" alt="NB Cricket Training Hoodie">
-                <h3>NB Team Training Hoodie</h3>
-                <p class="product-desc">
-                    Thermal fleece fabric featuring moisture-wicking NB DRY.<br>
-                    Athletic comfort cut built for early morning warmups.
-                </p>
-                <p class="product-price">₹2,499.00</p>
-                <a href="product8.html" class="view-details">View Details</a>
-            </div>
-        </div>
-    </section>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                pavankarra2712@gmail.com
+            </p>
 
-    <section class="bottom-section" id="about">
-        <div class="why-choose">
-            <h2>Why Choose Our Franchise</h2>
-            <div class="features">
-                <div class="feature">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>100% Genuine NB</p>
-                </div>
-                <div class="feature">
-                    <i class="fa-solid fa-truck-fast"></i>
-                    <p>Free Express Shipping</p>
-                </div>
-                <div class="feature">
-                    <i class="fa-solid fa-headset"></i>
-                    <p>24/7 Match Support</p>
-                </div>
-            </div>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 8522965119
+            </p>
 
-            <div class="feedback">
-                <img src="reviewer.jpg" alt="Reviewer photo">
-                <div class="customer-details">
-                    <h3>Vikram Rathore</h3>
-                    <p class="stars">★★★★★</p>
-                </div>
-                <p class="review">
-                    "As an active club cricketer, getting genuine New Balance gear was always a priority. The TC 1260 bat has exceptional ping, and the DC batting gloves provide unbeatable shock protection against fast bowling. Outstanding franchise service!"
-                </p>
-            </div>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Madhapur Main Road, Hyderabad, India
+            </p>
+
         </div>
 
-        <div class="newsletter" id="contact">
-            <h2>Franchise Club</h2>
-            <div class="newsletter-box">
-                <h4>Get 15% Off your<br> first New Balance kit!</h4>
-                <form>
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        <form class="contact-form" onsubmit="return handleContact(event)">
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-links">
-                <h2>Quick Links</h2>
-                <a href="#home">Home</a>
-                <a href="#collections">Categories</a>
-                <a href="#product">Shop</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#">Warranty Policy</a>
-            </div>
-            <div class="footer-contact">
-                <h2>Contact Us</h2>
-                <p>New Balance Cricket Franchise Store</p>
-                <p>Address: Madhapur Main Road, Hyderabad, India</p>
-                <p>Phone: +91 8522965119</p>
-                <p>Email: pavankarra2712@gmail.com</p>
-            </div>
-            <div class="footer-media">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <input type="text" placeholder="Subject">
+
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h2>MovieLand!</h2>
+            <p>
+                Bringing thrilling stories, cinematic artistry, and unforgettable 
+                adventures straight to movie enthusiasts worldwide.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#genres">Genres</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <a href="login.html">Login</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
-    </footer>
+
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 MovieLand. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script>
+    function handleContact(e) {
+        e.preventDefault();
+        alert("Thank you! Your message has been sent to MovieLand support.");
+        e.target.reset();
+        return false;
+    }
+</script>
+
 </body>
 </html>
